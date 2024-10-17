@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "";
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed ;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}   
+.logo h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+.logo h1 span{
+    color: rgb(206, 196, 19);
+}
+.nav-link ul{
+    display: flex;
+    list-style: none;
+    
+    
+}
+.nav-link ul li a{
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: beige;
+    text-transform: uppercase;
+    transition: 0.6s;
+    position: relative;
+}
+.nav-link ul li a:hover{
+    color: rgb(112, 44, 44);
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 71, 71, 0.038);
+    z-index: 2;
+}   
+.img video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+.content h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+.content p a{
+    text-decoration: none;
+    color:rgb(27, 27, 30);
+    text-transform: uppercase;
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: chartreuse;
+    padding: 3px;
+
+}
+.content p a:hover{
+    background-color: rgb(35, 77, 84);
+}
+.content p{
+    margin-bottom: 20px;
+    color: aliceblue;
+    
+}
+.tombol a{
+    background-color: rgb(255, 0, 68);
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.home .content{
+    width: 70%;
+    z-index: 1;
+}
+.title h2{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    width: 900px;
+    color: rgb(38, 22, 22);
+    padding: 20px;
+    margin-left: 300px;
+    
+}
+.garis-dua{
+    background-color: orange;
+    width: 80px;
+    height: 3px;
+    margin-top: 10px;
+    margin-left: 390px;
+}
+.GARIS{
+    background-color: red;
+    width: 60PX;
+    height: 2px;
+    margin-top: 20px;
+    
+}
+.container{
+    display: flex;
+    margin-top: 20px;
+}
+.card-dua{
+    width: 400px;
+    height: 500px;
+    margin-left: 300px;
+    box-shadow:0 0 8px;
+    border-radius: 10px;
+    
+}
+.card-dua h2{
+    margin-left: 170px;
+    margin-top: 20px;
+}
+.card-dua p{
+    margin-top: 20px;
+    text-align: center  ;
+}
+.gambar{
+    background-image: url(https://plus.unsplash.com/premium_photo-1677829177642-30def98b0963?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+
+}
+.button{
+    margin-top: 40px;
+
+    
+}
+.button a{
+    background-color: crimson;
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 150px;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+
+.card-tiga{
+    width: 400px;
+    height: 500px;
+    margin-left: 80px;
+    box-shadow:0 0 8px;
+    border-radius: 10px;
+
+    
+}
+.card-tiga h2{
+    margin-left: 140px;
+    margin-top: 20px;
+}
+.card-tiga p{
+    margin-top: 20px;
+    text-align: center  ;
+}
+.card{
+    margin-bottom: 50px;
+}
+.gambar-3{
+    background-image: url(https://images.unsplash.com/photo-1724258391590-6cfdc2d783b4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+
+}
+.button-3{
+    margin-top: 40px;
+
+    
+}
+.button-3 a{
+    background-color: crimson;
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 150px;
+    padding: 14px;
+    border-radius: 10px;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(95, 71, 71, 0.038);
+    z-index: 2;
+}   
+.img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+.content h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+.content p a{
+    text-decoration: none;
+    color:rgb(27, 27, 30);
+    text-transform: uppercase;
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: chartreuse;
+    padding: 3px;
+
+}
+.content p a:hover{
+    background-color: rgb(35, 77, 84);
+}
+.content p{
+    margin-bottom: 20px;
+    color: aliceblue;
+    
+}
+.tombol a{
+    background-color: rgb(255, 0, 68);
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.home .content{
+    width: 70%;
+    z-index: 1;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>~N.A~</h1>
+        </div>
+        <nav class="nav-link">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="img">
+            <video src="asset/3121327-hd_1920_1080_24fps.mp4" autoplay loop muted></video>
+        </div>
+        <div class="content">
+            <h2>EXPLORE THE WORLD</h2>
+            <DIV class="GARIS"></DIV>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, maiores. Vitae rem alias sint quia repellendus quasi consequuntur esse, atque aspernatur facilis quae deleniti incidunt fugiat inventore reiciendis autem magnam possimus iusto adipisci! Quaerat in, possimus amet incidunt minima quam fugit repudiandae fuga ipsa suscipit cupiditate. Modi ullam eos dolorum id aspernatur. Minus assumenda cupiditate hic sit atque eius dignissimos?</p>
+            <div class="tombol">
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </section>
+    <section class="CARD">
+     <div class="title">
+        <h2>UPCOMING EVENT</h2>
+        <div class="garis-dua"></div>
+     </div>
+    </section>
+<div class="container">
+    <section class="card-dua">
+        <div class="gambar"></div>
+        <h2>Bali</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quibusdam vero repellat laboriosam iure libero et deleniti dolorem, beatae ipsam, velit voluptatem voluptate corrupti. Minus tenetur dicta ea repellat modi?</p>
+        <div class="button">
+            <a href="">Learn More</a>
+        </div>
+    </section>
+
+    <section class="card-tiga">
+        <div class="gambar-3"></div>
+        <h2>Raja ampat</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quibusdam vero repellat laboriosam iure libero et deleniti dolorem, beatae ipsam, velit voluptatem voluptate corrupti. Minus tenetur dicta ea repellat modi?</p>
+        <div class="button-3">
+            <a href="">Learn More</a>
+        </div>
+    </section>
+</div>
+
+    <section class="home">
+        <div class="img">
+            <img src="asset/pukpik-aB46yUmsMp0-unsplash.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>EXPLORE THE WORLD</h2>
+            <DIV class="GARIS"></DIV>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, maiores. Vitae rem alias sint quia repellendus quasi consequuntur esse, atque aspernatur facilis quae deleniti incidunt fugiat inventore reiciendis autem magnam possimus iusto adipisci! Quaerat in, possimus amet incidunt minima quam fugit repudiandae fuga ipsa suscipit cupiditate. Modi ullam eos dolorum id aspernatur. Minus assumenda cupiditate hic sit atque eius dignissimos?</p>
+            <div class="tombol">
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
